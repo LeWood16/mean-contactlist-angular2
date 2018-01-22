@@ -46,6 +46,13 @@ export class ContactListComponent implements OnInit {
   createNewContact() {
     var contact: Contact = {
       name: '',
+      address: {
+        lineOne: '',
+        lineTwo: '',
+        city: '',
+        state: '',
+        zipcode: ''
+      },
       email: '',
       phone: {
         work: '',
